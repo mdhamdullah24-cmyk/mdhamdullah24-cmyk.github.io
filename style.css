@@ -1,18 +1,24 @@
 /* General Styling */
+:root {
+    --primary-color: #001f3f; /* Dark Blue */
+    --secondary-color: #FFD700; /* Gold Accent */
+    --text-color: #333;
+    --bg-light: #f9f9f9;
+}
+
 body {
-    font-family: 'Hind Siliguri', Arial, sans-serif;
+    font-family: 'Hind Siliguri', sans-serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    scroll-behavior: smooth;
-    color: #333;
+    color: var(--text-color);
 }
 
-/* Header and Navigation */
+/* Header & Navigation */
 header {
     background-color: #ffffff;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-    padding: 10px 0;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    padding: 1rem 0;
     position: fixed;
     width: 100%;
     top: 0;
@@ -28,124 +34,69 @@ nav {
     padding: 0 2rem;
 }
 
-.logo img {
-    height: 50px; /* Adjust height as needed */
-}
+.logo img { height: 50px; }
+nav ul { list-style: none; display: flex; gap: 2rem; }
+nav a { color: var(--primary-color); text-decoration: none; font-weight: 600; transition: color 0.3s; }
+nav a:hover { color: var(--secondary-color); }
 
-nav ul {
-    list-style: none;
-    display: flex;
-    gap: 1.5rem;
-}
-
-nav a {
-    color: #001f3f; /* Dark Blue from Logo */
-    text-decoration: none;
-    font-size: 1rem;
-    font-weight: bold;
-    transition: color 0.3s;
-}
-
-nav a:hover {
-    color: #0056b3;
-}
+main { margin-top: 80px; } /* To avoid content being hidden by fixed header */
 
 /* Hero Section */
 .hero {
-    background: linear-gradient(rgba(0, 31, 63, 0.7), rgba(0, 31, 63, 0.7)), url('https://via.placeholder.com/1500x800.png?text=Digital+Marketing+Background') no-repeat center center/cover;
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url(https://images.unsplash.com/photo-1574717547348-45b7396c6688?q=80&w=2070&auto=format&fit=crop) no-repeat center center/cover;
     color: white;
-    height: 100vh;
+    height: 90vh;
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
 }
+.hero-title { font-family: 'Poppins', sans-serif; font-size: 3.5rem; margin-bottom: 0.5rem; }
+.hero-subtitle { font-size: 1.5rem; font-weight: 400; }
+.cta-button { display: inline-block; padding: 12px 28px; margin-top: 2rem; background: var(--secondary-color); color: var(--primary-color); text-decoration: none; border-radius: 5px; font-weight: 600; transition: transform 0.3s, box-shadow 0.3s; }
+.cta-button:hover { transform: translateY(-3px); box-shadow: 0 4px 15px rgba(255, 215, 0, 0.4); }
 
-.hero-content h1 {
-    font-size: 3.5rem;
-    margin-bottom: 1rem;
-}
+/* General Section Styling */
+section { padding: 5rem 2rem; }
+.section-title { font-family: 'Poppins', sans-serif; text-align: center; font-size: 2.5rem; color: var(--primary-color); margin-bottom: 3rem; }
 
-.hero-content p {
-    font-size: 1.5rem;
-}
+/* Services */
+.service-container { display: flex; justify-content: center; gap: 2rem; flex-wrap: wrap; }
+.service-box { background: #fff; border-radius: 10px; padding: 2rem; width: 300px; text-align: center; box-shadow: 0 5px 15px rgba(0,0,0,0.08); transition: transform 0.3s; }
+.service-box:hover { transform: translateY(-10px); }
+.service-box h3 { color: var(--primary-color); margin-top: 0; }
 
-.cta-button {
-    display: inline-block;
-    padding: 12px 25px;
-    margin-top: 25px;
-    background-color: white;
-    color: #001f3f;
-    text-decoration: none;
-    border-radius: 5px;
-    font-weight: bold;
-    transition: background-color 0.3s, color 0.3s;
-}
+/* Studio Section */
+.studio-section { background-color: var(--bg-light); }
+.studio-content { display: flex; align-items: center; gap: 3rem; max-width: 1100px; margin: auto; }
+.studio-image { flex: 1; }
+.studio-image img { width: 100%; border-radius: 10px; box-shadow: 0 10px 20px rgba(0,0,0,0.1); }
+.studio-details { flex: 1; }
+.studio-details h3 { font-size: 1.8rem; color: var(--primary-color); }
+.studio-details ul { list-style: none; padding: 0; margin: 1.5rem 0; }
+.studio-details li { margin-bottom: 0.8rem; }
 
-.cta-button:hover {
-    background-color: #f0f0f0;
-}
+/* Portfolio Section */
+.portfolio-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem; }
+.portfolio-item { position: relative; overflow: hidden; border-radius: 10px; box-shadow: 0 5px 15px rgba(0,0,0,0.1); }
+.portfolio-item img { width: 100%; display: block; transition: transform 0.4s; }
+.portfolio-item:hover img { transform: scale(1.1); }
+.portfolio-info { position: absolute; bottom: 0; left: 0; right: 0; background: linear-gradient(transparent, rgba(0, 31, 63, 0.9)); color: white; padding: 1.5rem; transform: translateY(100%); transition: transform 0.4s; }
+.portfolio-item:hover .portfolio-info { transform: translateY(0); }
+.portfolio-info h3 { margin: 0 0 0.5rem 0; }
+.portfolio-info p { margin: 0; }
 
-/* Sections */
-section {
-    padding: 6rem 2rem 2rem;
-    max-width: 1100px;
-    margin: 0 auto;
-    text-align: center;
-}
-
-section h2 {
-    font-size: 2.5rem;
-    margin-bottom: 2rem;
-    color: #001f3f;
-}
-
-/* Services Section */
-.service-container {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 2rem;
-}
-
-.service-box {
-    background: #fff;
-    border: 1px solid #ddd;
-    border-radius: 10px;
-    padding: 2rem;
-    width: calc(50% - 4rem);
-    box-shadow: 0 4px 8px rgba(0,0,0,0.05);
-    transition: transform 0.3s, box-shadow 0.3s;
-}
-
-.service-box:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 8px 16px rgba(0,0,0,0.1);
-}
-
-.service-box h3 {
-    color: #001f3f;
-    margin-top: 0;
-}
+/* Testimonials */
+#reviews { background-color: var(--bg-light); }
+.testimonial-container { display: flex; justify-content: center; gap: 2rem; flex-wrap: wrap; }
+.testimonial-card { background: var(--primary-color); color: white; padding: 2rem; border-radius: 10px; max-width: 400px; }
+.testimonial-card p { font-size: 1.1rem; font-style: italic; margin-top: 0; }
+.testimonial-card h4 { text-align: right; color: var(--secondary-color); margin-bottom: 0; }
 
 /* Contact Section */
-#contact {
-    background-color: #f9f9f9;
-}
-
-.contact-info {
-    font-size: 1.2rem;
-    margin-top: 1.5rem;
-}
-
-.contact-info p {
-    margin: 0.5rem 0;
-}
+#contact { text-align: center; }
+.contact-info { font-size: 1.2rem; margin-top: 1.5rem; }
+.contact-info p { margin: 0.5rem 0; }
 
 /* Footer */
-footer {
-    background: #001f3f; /* Dark Blue from Logo */
-    color: white;
-    text-align: center;
-    padding: 1.5rem 0;
-}
+footer { background: var(--primary-color); color: white; text-align: center; padding: 1.5rem 0; }
