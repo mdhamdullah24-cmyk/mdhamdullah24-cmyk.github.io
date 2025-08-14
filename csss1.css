@@ -1,0 +1,151 @@
+/* General Styling */
+body {
+    font-family: 'Hind Siliguri', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    color: #333;
+}
+
+/* Header and Navigation */
+header {
+    background-color: #ffffff;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+.logo img {
+    height: 50px; /* Adjust height as needed */
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+}
+
+nav a {
+    color: #001f3f; /* Dark Blue from Logo */
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #0056b3;
+}
+
+/* Hero Section */
+.hero {
+    background: linear-gradient(rgba(0, 31, 63, 0.7), rgba(0, 31, 63, 0.7)), url('https://via.placeholder.com/1500x800.png?text=Digital+Marketing+Background') no-repeat center center/cover;
+    color: white;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.hero-content h1 {
+    font-size: 3.5rem;
+    margin-bottom: 1rem;
+}
+
+.hero-content p {
+    font-size: 1.5rem;
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 12px 25px;
+    margin-top: 25px;
+    background-color: white;
+    color: #001f3f;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.cta-button:hover {
+    background-color: #f0f0f0;
+}
+
+/* Sections */
+section {
+    padding: 6rem 2rem 2rem;
+    max-width: 1100px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    color: #001f3f;
+}
+
+/* Services Section */
+.service-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.service-box {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 2rem;
+    width: calc(50% - 4rem);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.service-box:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+}
+
+.service-box h3 {
+    color: #001f3f;
+    margin-top: 0;
+}
+
+/* Contact Section */
+#contact {
+    background-color: #f9f9f9;
+}
+
+.contact-info {
+    font-size: 1.2rem;
+    margin-top: 1.5rem;
+}
+
+.contact-info p {
+    margin: 0.5rem 0;
+}
+
+/* Footer */
+footer {
+    background: #001f3f; /* Dark Blue from Logo */
+    color: white;
+    text-align: center;
+    padding: 1.5rem 0;
+}
