@@ -3,138 +3,256 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>RD Innovation - Creative Studio & Services</title>
+    <title>RD Innovation - Your Trusted Digital Agency</title>
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@400;600&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome CDN for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@400;600;700&family=Teko:wght@600&display=swap" rel="stylesheet">
 </head>
 <body>
 
+    <!-- Top Bar Section -->
+    <div class="top-bar">
+        <div class="container">
+            <div class="top-bar-left">
+                <i class="fas fa-bullhorn"></i> Welcome to RD Innovation
+            </div>
+            <div class="top-bar-right">
+                <i class="fas fa-map-marker-alt"></i> Dhaka, Bangladesh
+            </div>
+        </div>
+    </div>
+
     <!-- Header Section -->
     <header>
-        <nav>
+        <div class="container">
             <div class="logo">
-                <img src="logo.png" alt="RD Innovation Logo">
+                <a href="#"><img src="logo.png" alt="RD Innovation Logo"></a>
             </div>
-            <ul>
-                <li><a href="#home">হোম</a></li>
-                <li><a href="#services">সেবা</a></li>
-                <li><a href="#studio">স্টুডিও</a></li>
-                <li><a href="#portfolio">পোর্টফোলিও</a></li>
-                <li><a href="#reviews">রিভিউ</a></li>
-                <li><a href="#contact">যোগাযোগ</a></li>
-            </ul>
-        </nav>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about-services">About Us</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#analytics">Details</a></li>
+                    <li><a href="#clients-news">Clients</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="header-right">
+                <div class="search-icon">
+                    <i class="fas fa-search"></i>
+                </div>
+            </div>
+        </div>
     </header>
 
     <main>
         <!-- Hero Section -->
         <section id="home" class="hero">
-            <div class="hero-content">
-                <h1 class="hero-title">RD Innovation Creative Studio</h1>
-                <p class="hero-subtitle">আপনার সৃজনশীল প্রকল্পের জন্য উপযুক্ত স্থান ও সমাধান</p>
-                <a href="#studio" class="cta-button">আমাদের স্টুডিও দেখুন</a>
-            </div>
-        </section>
-
-        <!-- Services Section -->
-        <section id="services">
-            <h2 class="section-title">আমাদের প্রধান সেবা</h2>
-            <div class="service-container">
-                <div class="service-box">
-                    <h3>স্টুডিও ভাড়া</h3>
-                    <p>ফটোগ্রাফি, ভিডিও শ্যুট এবং কন্টেন্ট তৈরির জন্য সম্পূর্ণ সুযোগ-সুবিধা সহ আমাদের স্টুডিও ভাড়া নিন।</p>
-                </div>
-                <div class="service-box">
-                    <h3>ভিডিও এডিটিং</h3>
-                    <p>আপনার ধারণ করা ফুটেজকে প্রফেশনাল এবং আকর্ষণীয় ভিডিওতে পরিণত করার জন্য আমাদের দক্ষ টিম রয়েছে।</p>
-                </div>
-                <div class="service-box">
-                    <h3>গ্রাফিক্স ডিজাইন</h3>
-                    <p>ব্র্যান্ডিং, ডিজিটাল মিডিয়া এবং প্রিন্টের জন্য আকর্ষণীয় ও অর্থবহ ডিজাইন তৈরি করে থাকি।</p>
-                </div>
-            </div>
-        </section>
-
-        <!-- Studio Rental Section -->
-        <section id="studio" class="studio-section">
-            <h2 class="section-title">আমাদের ক্রিয়েটিভ স্টুডিও</h2>
-            <div class="studio-content">
-                <div class="studio-image">
-                    <!-- এইখানে আপনার স্টুডিওর ছবি দিন -->
-                    <img src="studio.jpg" alt="RD Innovation Studio">
-                </div>
-                <div class="studio-details">
-                    <h3>আপনার স্বপ্নের প্রকল্পের জন্য সেরা পরিবেশ</h3>
-                    <p>আমাদের স্টুডিওটি আধুনিক যন্ত্রপাতি এবং মনোরম পরিবেশে সজ্জিত। এখানে আপনি নিরিবিলিভাবে আপনার সৃজনশীল কাজ সম্পন্ন করতে পারবেন।</p>
-                    <ul>
-                        <li>✅ প্রফেশনাল লাইটিং সেটআপ</li>
-                        <li>✅ বিভিন্ন রঙের ব্যাকড্রপ</li>
-                        <li>✅ সাউন্ডপ্রুফ পরিবেশ</li>
-                        <li>✅ উচ্চ-গতির ইন্টারনেট</li>
-                    </ul>
-                    <a href="#contact" class="cta-button">বুকিংয়ের জন্য যোগাযোগ করুন</a>
-                </div>
-            </div>
-        </section>
-
-        <!-- Portfolio Section -->
-        <section id="portfolio">
-            <h2 class="section-title">আমাদের কিছু কাজ</h2>
-            <div class="portfolio-grid">
-                <!-- এইখানে আপনার কাজের ডেমো ছবি ও তথ্য দিন -->
-                <div class="portfolio-item">
-                    <img src="work1.jpg" alt="Portfolio Work 1">
-                    <div class="portfolio-info">
-                        <h3>প্রজেক্টের নাম ১</h3>
-                        <p>ভিডিও প্রোডাকশন</p>
+            <div class="shape shape-1"></div>
+            <div class="shape shape-2"></div>
+            <div class="container">
+                <div class="hero-content">
+                    <span class="tagline"><i class="fas fa-shield-alt"></i> Your Trusted Agency</span>
+                    <h1>Personalized services, with cost-effective solutions.</h1>
+                    <div class="button-group">
+                        <a href="#about-services" class="btn btn-outline">Discover More <i class="fas fa-arrow-right"></i></a>
+                        <a href="#contact" class="btn btn-filled">Learn More <i class="fas fa-arrow-right"></i></a>
                     </div>
                 </div>
-                <div class="portfolio-item">
-                    <img src="work2.jpg" alt="Portfolio Work 2">
-                    <div class="portfolio-info">
-                        <h3>প্রজেক্টের নাম ২</h3>
-                        <p>ব্র্যান্ডিং ডিজাইন</p>
-                    </div>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
                 </div>
-                <div class="portfolio-item">
-                    <img src="work3.jpg" alt="Portfolio Work 3">
-                     <div class="portfolio-info">
-                        <h3>প্রজেক্টের নাম ৩</h3>
-                        <p>ফটোগ্রাফি</p>
+            </div>
+        </section>
+
+        <!-- About & Services Combined Section -->
+        <section id="about-services" class="about-services-section">
+            <div class="container">
+                <div class="about-services-grid">
+                    <div class="about-content-column">
+                        <div class="section-tag">
+                            <i class="fas fa-building"></i> <span>About Our Agency</span>
+                        </div>
+                        <h2 class="section-title">The Best <span class="highlight">Marketing</span> Agency In Bangladesh</h2>
+                        <p>RD Innovation has created a Sales-Oriented Digital Marketing service. Our aim is to ensure it is acceptable to the users of the digital platform. We are constantly developing our services through research.</p>
+                        <ul class="checklist">
+                            <li>Over a decade of proven industry experience.</li>
+                            <li>Hear from satisfied clients who've experienced our impact.</li>
+                            <li>A dynamic team of passionate digital experts.</li>
+                        </ul>
+                        <a href="#contact" class="btn btn-filled">Learn More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                    <div class="services-content-column">
+                        <div class="services-card-grid">
+                            <div class="service-preview-card">
+                                <div class="icon-wrapper"><i class="fab fa-facebook-f"></i></div>
+                                <h4>Facebook Marketing</h4>
+                                <a href="#" class="view-link">View Subject <i class="fas fa-arrow-right"></i></a>
+                            </div>
+                            <div class="service-preview-card">
+                                <div class="icon-wrapper"><i class="fab fa-google"></i></div>
+                                <h4>Google Ads</h4>
+                                <a href="#" class="view-link">View Subject <i class="fas fa-arrow-right"></i></a>
+                            </div>
+                            <div class="service-preview-card">
+                                <div class="icon-wrapper"><i class="fas fa-code"></i></div>
+                                <h4>Web Development</h4>
+                                <a href="#" class="view-link">View Subject <i class="fas fa-arrow-right"></i></a>
+                            </div>
+                            <div class="service-preview-card">
+                                <div class="icon-wrapper"><i class="fas fa-pen-nib"></i></div>
+                                <h4>Graphics Design</h4>
+                                <a href="#" class="view-link">View Subject <i class="fas fa-arrow-right"></i></a>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- Client Reviews Section -->
-        <section id="reviews">
-            <h2 class="section-title">ক্লায়েন্টরা যা বলেন</h2>
-            <div class="testimonial-container">
-                <div class="testimonial-card">
-                    <p>"RD Innovation-এর স্টুডিও ব্যবহার করে আমি খুবই আনন্দিত। পরিবেশ এবং সুযোগ-সুবিধা দুটোই অসাধারণ ছিল।"</p>
-                    <h4>- ক্লায়েন্টের নাম</h4>
-                </div>
-                <div class="testimonial-card">
-                    <p>"তাদের ভিডিও এডিটিং সেবা সত্যিই প্রশংসার যোগ্য। সময়মতো এবং নিখুঁত কাজ পেয়েছি।"</p>
-                    <h4>- অন্য ক্লায়েন্টের নাম</h4>
+        <!-- Analytics Section -->
+        <section id="analytics" class="analytics-section">
+            <div class="analytics-bg-shape"></div>
+            <div class="container">
+                <div class="analytics-grid">
+                    <div class="analytics-sidebar">
+                        <ul>
+                            <li class="active"><a href="#"><i class="fas fa-chevron-left"></i> Reporting & Analysis</a></li>
+                            <li><a href="#">Keyword Result</a></li>
+                            <li><a href="#">Google Analytics</a></li>
+                            <li><a href="#">Marketing Strategy</a></li>
+                        </ul>
+                    </div>
+                    <div class="analytics-content">
+                        <div class="section-tag"><i class="fas fa-chart-line"></i> <span>Service Details</span></div>
+                        <h2 class="section-title">How <span class="highlight">Analytics</span> Helping Face Challenges</h2>
+                        <p>Analysis of the current business model, assessment of the company's competitiveness and market position.</p>
+                        <div class="progress-bars">
+                            <div class="progress-item">
+                                <div class="progress-label"><span>IDENTIFYING CHALLENGES</span> <span>65%</span></div>
+                                <div class="progress-bg"><div class="progress-done" style="width: 65%;"></div></div>
+                            </div>
+                            <div class="progress-item">
+                                <div class="progress-label"><span>PERFORMANCE MONITORING</span> <span>81%</span></div>
+                                <div class="progress-bg"><div class="progress-done" style="width: 81%;"></div></div>
+                            </div>
+                        </div>
+                        <div class="stats-grid">
+                            <div class="stat-box"><i class="fas fa-users"></i><h3>320m</h3><p>Audience reach</p></div>
+                            <div class="stat-box"><i class="fas fa-file-alt"></i><h3>980+</h3><p>Success Projects</p></div>
+                            <div class="stat-box"><i class="fas fa-user-friends"></i><h3>1278</h3><p>Employee World</p></div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
-
-        <!-- Contact Section -->
-        <section id="contact">
-            <h2 class="section-title">আমাদের সাথে যোগাযোগ</h2>
-            <p>স্টুডিও বুকিং বা যেকোনো তথ্যের জন্য আমাদের সাথে যোগাযোগ করুন।</p>
-            <div class="contact-info">
-                <p><strong>ফোন:</strong> 01833395933</p>
-                <p><strong>ইমেইল:</strong> booking@rdinnovation.studio</p>
+        
+        <!-- Clients & News Section -->
+        <section id="clients-news" class="clients-news-section">
+            <div class="container">
+                <div class="clients-title-wrapper">
+                    <h2 class="section-title">Our <span class="highlight">Honorable</span> Clients</h2>
+                </div>
+                <div class="clients-slider-wrapper">
+                    <div class="logo-carousel">
+                        <img src="client1.png" alt="Client Logo"><img src="client2.png" alt="Client Logo">
+                        <img src="client3.png" alt="Client Logo"><img src="client4.png" alt="Client Logo">
+                        <img src="client5.png" alt="Client Logo">
+                        <!-- Duplicate logos for smooth scroll -->
+                        <img src="client1.png" alt="Client Logo"><img src="client2.png" alt="Client Logo">
+                        <img src="client3.png" alt="Client Logo"><img src="client4.png" alt="Client Logo">
+                        <img src="client5.png" alt="Client Logo">
+                    </div>
+                </div>
+                <div class="news-articles-wrapper">
+                    <div class="section-tag"><i class="far fa-newspaper"></i> <span>News & Blogs</span></div>
+                    <h2 class="section-title">News & <span class="highlight">Articles</span></h2>
+                    <div class="blog-grid">
+                        <div class="blog-card">
+                            <div class="blog-image-wrapper"><img src="blog1.jpg" alt="Blog Post"><div class="date-ribbon">MAR 22, 2025</div></div>
+                            <div class="blog-content">
+                                <div class="blog-meta"><span><i class="fas fa-user"></i> RD Innovation</span><span><i class="fas fa-comments"></i> 0 Comments</span></div>
+                                <h3>Facebook Ads for eCommerce Growth</h3>
+                                <a href="#" class="read-more-link">READ MORE <i class="fas fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                        <div class="blog-card">
+                            <div class="blog-image-wrapper"><img src="blog2.jpg" alt="Blog Post"><div class="date-ribbon">MAR 22, 2025</div></div>
+                            <div class="blog-content">
+                                <div class="blog-meta"><span><i class="fas fa-user"></i> RD Innovation</span><span><i class="fas fa-comments"></i> 0 Comments</span></div>
+                                <h3>Guide to Facebook Store Development</h3>
+                                <a href="#" class="read-more-link">READ MORE <i class="fas fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                        <div class="blog-card">
+                            <div class="blog-image-wrapper"><img src="blog3.jpg" alt="Blog Post"><div class="date-ribbon">MAR 22, 2025</div></div>
+                            <div class="blog-content">
+                                <div class="blog-meta"><span><i class="fas fa-user"></i> RD Innovation</span><span><i class="fas fa-comments"></i> 0 Comments</span></div>
+                                <h3>Motion Graphics and Animation</h3>
+                                <a href="#" class="read-more-link">READ MORE <i class="fas fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
     </main>
 
-    <!-- Footer -->
-    <footer>
-        <p>&copy; 2025 RD Innovation. সর্বস্বত্ব সংরক্ষিত।</p>
+    <!-- Footer Section -->
+    <footer id="contact">
+        <div class="footer-cta">
+            <div class="container">
+                <h2>Still You Need Our Support ?</h2>
+                <a href="#" class="btn btn-filled">Click Here <i class="fas fa-arrow-right"></i></a>
+            </div>
+        </div>
+        <div class="main-footer">
+            <div class="container">
+                <div class="footer-grid">
+                    <div class="footer-col">
+                        <img src="logo.png" alt="RD Innovation Logo" class="footer-logo">
+                        <p>RD Innovation is a complete digital marketing agency. Our aim is to take the digital marketing industry of Bangladesh to a whole different level.</p>
+                    </div>
+                    <div class="footer-col">
+                        <h3>Services</h3>
+                        <ul>
+                            <li><a href="#">Facebook Marketing</a></li>
+                            <li><a href="#">Google Ads Marketing</a></li>
+                            <li><a href="#">Graphics Design</a></li>
+                            <li><a href="#">Web Development</a></li>
+                            <li><a href="#">YouTube Marketing</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h3>Useful Links</h3>
+                        <ul>
+                            <li><a href="#">About Us</a></li>
+                            <li><a href="#">Our Projects</a></li>
+                            <li><a href="#">Terms & Conditions</a></li>
+                            <li><a href="#">Privacy Policy</a></li>
+                            <li><a href="#">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h3>Our Info</h3>
+                        <ul class="contact-info-list">
+                            <li><i class="fas fa-clock"></i><div><strong>OPENING HOURS :</strong><br>Sat - Thu 10.00 am - 7.30 pm</div></li>
+                            <li><i class="fas fa-envelope"></i><div><strong>Email:</strong><br>info@rdinnovation.com</div></li>
+                            <li><i class="fas fa-phone-alt"></i><div><strong>Phone:</strong><br>+8801833395933</div></li>
+                            <li><i class="fas fa-map-marker-alt"></i><div><strong>Address:</strong><br>Your Office Address, Dhaka</div></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="copyright-bar">
+            <p>&copy; 2025 RD Innovation. All rights reserved.</p>
+        </div>
     </footer>
 
     <script src="js.js"></script>
